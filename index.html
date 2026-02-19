@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Генератор собраний</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Шаблон Журнала МР</h1>
+
+    <label>Дата</label>
+    <input type="text" id="date" placeholder="ДД.ММ.ГГ">
+
+    <label>Новости</label>
+    <textarea id="news" placeholder="Текст новостей..."></textarea>
+
+    <label>Трансляция</label>
+    <textarea id="stream" placeholder="Текст трансляции..."></textarea>
+
+    <div class="buttons">
+        <button class="generate" onclick="generate()">Составить отчёт</button>
+        <button class="copy" onclick="copyText()">Скопировать отчёт</button>
+    </div>
+
+    <div class="result">
+        <label>Результат</label>
+        <textarea id="result" readonly></textarea>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
