@@ -13,5 +13,5 @@ function copyText() {
     result.select();
     result.setSelectionRange(0, 99999);
     document.execCommand("copy");
-    alert("Текст скопирован");
 }
+
