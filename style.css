@@ -6,7 +6,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding-top: 60px;
 }
 
 .container {
@@ -106,3 +105,4 @@ button {
     min-height: 260px;
     border: 1px solid #2f2f35;
 }
+
