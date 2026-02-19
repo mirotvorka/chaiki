@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: "Georgia", serif;
+    background: radial-gradient(circle at top, #1b1b1f 0%, #0f0f12 60%, #0a0a0c 100%);
+    color: #e8e3d9;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 60px;
+}
+
+.container {
+    width: 820px;
+    max-width: 95%;
+    padding: 28px;
+    background: #141418;
+    border: 1px solid #2a2a2f;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 24px;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #C8ACD6;
+}
+
+label {
+    display: block;
+    margin-top: 18px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #a8a39a;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border-radius: 6px;
+    border: 1px solid #2f2f35;
+    background: #0f0f13;
+    color: #f0ece3;
+    font-size: 14px;
+    font-family: inherit;
+    box-sizing: border-box;
+    outline: none;
+    transition: 0.2s;
+}
+
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.buttons {
+    margin-top: 24px;
+    display: flex;
+    gap: 14px;
+}
+
+button {
+    flex: 1;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: 0.2s;
+}
+
+.generate {
+    background: #C8ACD6;
+    color: #111;
+    border: none;
+}
+
+.generate:hover {
+    background: #C8ACD6;
+}
+
+.copy {
+    background: transparent;
+    color: #C8ACD6;
+    border: 1px solid #C8ACD6;
+}
+
+.copy:hover {
+    background: #C8ACD6;
+    color: #111;
+}
+ 
+.result {
+    margin-top: 28px;
+}
+
+.result textarea {
+    background: #0b0b0e;
+    color: #e8e3d9;
+    min-height: 260px;
+    border: 1px solid #2f2f35;
+}
