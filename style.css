@@ -106,3 +106,27 @@ button {
     border: 1px solid #2f2f35;
 }
 
+.news-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #a8a39a;
+    cursor: pointer;
+    user-select: none;
+}
+
+.news-checkbox input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.news-checkbox input[type="checkbox"]:checked {
+    accent-color: #C8ACD6; 
+}
+
+
+
