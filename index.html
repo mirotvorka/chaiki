@@ -3,10 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>пиу</title>
+<title>Автозаполнение шаблона</title>
 
 <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
@@ -14,18 +13,29 @@
 <div class="container">
     <h1>Журнал МР</h1>
 
-    <label>Дата</label>
-    <input type="text" id="date" placeholder="ДД.ММ.ГГ">
+  <div class="header-row">
+
+
+    <label class="news-checkbox">
+        <input type="checkbox" id="newsMode">
+        #новости
+    </label>
+</div>
+
+<label id="dateLabel" for="date">Дата</label>   
+ <input type="text" id="date" placeholder="дд.мм.гг">
 
     <label>Новости</label>
     <textarea id="news" placeholder="Текст новостей..."></textarea>
 
-    <label>Трансляция</label>
-    <textarea id="stream" placeholder="Текст трансляции..."></textarea>
+    <div id="streamBlock">
+        <label>Трансляция</label>
+        <textarea id="stream" placeholder="Текст трансляции..."></textarea>
+    </div>
 
     <div class="buttons">
-        <button class="generate" onclick="generate()">Составить отчёт</button>
-        <button class="copy" onclick="copyText()">Скопировать отчёт</button>
+        <button class="generate" onclick="generate()">Составить шаблон</button>
+        <button class="copy" onclick="copyText()">Скопировать шаблон</button>
     </div>
 
     <div class="result">
@@ -37,5 +47,3 @@
 <script src="script.js"></script>
 </body>
 </html>
-
-
