@@ -13,31 +13,33 @@
 <div class="container">
     <h1>Журнал МР</h1>
 
-  <div class="header-row">
+    <div class="header-row">
+        <label class="news-checkbox">
+            <input type="checkbox" id="newsMode">
+            #новости
+        </label>
+    </div>
 
-
-    <label class="news-checkbox">
-        <input type="checkbox" id="newsMode">
-        #новости
-    </label>
-</div>
-
-<label id="dateLabel" for="date">Дата</label>   
- <input type="text" id="date" placeholder="дд.мм.гг">
+    <label id="dateLabel" for="date">Дата</label>
+    <input type="text" id="date" placeholder="дд.мм.гг">
 
     <label>Новости</label>
     <textarea id="news" placeholder="Текст новостей..."></textarea>
 
-<div id="casterBlock">
-    <label>Транслировал [ID]</label>
-    <input type="text" id="casterId" placeholder="Например: 750333">
-</div>
+    <div id="authorBlock">
+        <label>Пост составил [ID]</label>
+        <input type="text" id="authorId" placeholder="Например: 750333">
+    </div>
 
     <div id="streamBlock">
         <label>Трансляция</label>
         <textarea id="stream" placeholder="Текст трансляции..."></textarea>
     </div>
 
+    <div id="casterBlock">
+        <label>Транслировал собрание [ID]</label>
+        <input type="text" id="casterId" placeholder="Например: 750333">
+    </div>
 
     <div class="buttons">
         <button class="generate" onclick="generate()">Составить шаблон</button>
