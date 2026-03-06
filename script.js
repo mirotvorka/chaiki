@@ -53,6 +53,7 @@ function generate() {
 
     let casterId = (document.getElementById("casterId")?.value || "").trim();
     if (!casterId) casterId = "ID";
+
     news = news.replace(/catwar\.(?:net|su)\/blog(\d+)/gi, (match, id) => {
         return `[url=blog${id}]блог[/url]`;
     });
